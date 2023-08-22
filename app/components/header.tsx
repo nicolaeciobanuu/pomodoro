@@ -7,7 +7,7 @@ export function Header() {
     <div className={styles.container}>
       <div className={styles.right}>
         <a
-          href="https://github.com/ciobanunicolae/timer"
+          href="https://github.com/ciobanunicolae/pomodoro"
           title="View GitHub repository"
           target="_blank"
           rel="noopener noreferrer"
