@@ -1,21 +1,28 @@
 .list {
   display: flex;
+  border: 1px solid #d9d8d8;
+  border-radius: var(--radius);
+  gap:1px;
   .tab {
-    padding: 1rem 2rem;
-    border: 1px solid #f2f2f2;
+    padding: 1rem 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    
     text-align: center;
     color: var(--muted);
     &:first-child {
       border-top-left-radius: var(--radius);
+      border-bottom-left-radius: var(--radius);
     }
     &:last-child {
       border-top-right-radius: var(--radius);
+      border-bottom-right-radius: var(--radius);
     }
     &[data-state="active"] {
       color: var(--primary);
     }
     &:focus {
-      box-shadow: var(--focus);
+      outline: 1px solid #aaaaaa;
     }
     &::selection {
       background-color: transparent;

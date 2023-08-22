@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Label } from "./primitives";
 import { useSettings } from "@/providers";
+import styles from "@/styles/settings.module.scss";
 
 export function Settings() {
   document.title = "Settings";
@@ -34,9 +35,11 @@ export function Settings() {
   };
 
   return (
-    <div>
-      <div>
-        <Label htmlFor="pomodoroDuration">Pomodoro Duration</Label>
+    <div className={styles.container}>
+      <div className={styles.category}>
+        <Label htmlFor="pomodoroDuration" className={styles.label}>
+          Pomodoro Duration
+        </Label>
         <input
           type="text"
           id="pomodoroDuration"
@@ -46,8 +49,10 @@ export function Settings() {
           onChange={(event) => handleChange(event, "pomodoro")}
         />
       </div>
-      <div>
-        <Label htmlFor="shortBreakDuration">Short Break Duration</Label>
+      <div className={styles.category}>
+        <Label htmlFor="shortBreakDuration" className={styles.label}>
+          Short Break Duration
+        </Label>
         <input
           type="text"
           id="shortBreakDuration"
@@ -57,8 +62,10 @@ export function Settings() {
           onChange={(event) => handleChange(event, "shortBreak")}
         />
       </div>
-      <div>
-        <Label htmlFor="LongBreakDuration">Long Break Duration</Label>
+      <div className={styles.category}>
+        <Label htmlFor="LongBreakDuration" className={styles.label}>
+          Long Break Duration
+        </Label>
         <input
           type="text"
           inputMode="numeric"

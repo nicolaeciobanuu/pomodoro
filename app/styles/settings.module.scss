@@ -1,0 +1,26 @@
+.container{
+    padding-top: 5rem ;
+    .category{
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-around;
+        padding: 1rem 0;
+        align-items: center;
+        
+        .label{
+            color: #8f8f8f;
+        }
+        input{
+            margin-left: 2rem ;
+            border: 1px solid #eeeeee;
+            width: 70px;
+            padding: 0.4rem;
+            text-align: center;
+            border-radius: 4px;
+            &:focus{
+                outline: 1px solid blue;
+            }
+        }
+    }
+}
