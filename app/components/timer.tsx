@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Controls } from "./controls";
-import { Metadata } from "next";
+import styles from "@/styles/timer.module.scss";
 
-export function Timer({ duration, type }: { duration: number,type:string }) {
+export function Timer({ duration, type }: { duration: number; type: string }) {
   const [time, setTime] = React.useState(duration * 60);
   const [int, setInt]: any = React.useState(null);
   const [running, setRunning] = React.useState(false);
@@ -49,11 +49,11 @@ export function Timer({ duration, type }: { duration: number,type:string }) {
       setRunning(false);
       setTime(0);
     }
-    document.title=`${type} - ${formatTime(time)}`
+    document.title = `${type} - ${formatTime(time)}`;
   }, [time]);
   return (
-    <div>
-      <div>{formatTime(time)}</div>
+    <div className={styles.container}>
+      <div className={styles.time}>{formatTime(time)}</div>
       <div>
         <Controls
           start={start}
