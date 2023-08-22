@@ -1,30 +1,37 @@
 :root {
-  --background: #f9fafb;
-  --foreground: #f9f9fa;
-
-  --primary: hsl(2, 64%, 58%);
-
-  --start: red;
-  --restart: gray;
-  --resume: rgb(36, 218, 36);
-  --pause: yellow;
-  --reset: #eeeeee;
-
-  --shadow: #d1d5db 0px 0px 8px 0px;
+  --background: hsl(210, 20%, 98%);
+  --foreground: hsl(0, 0%, 66%);
+  --button-text-1: hsl(210, 20%, 98%);
+  --button-text-2: hsl(0, 0%, 33%);
+  --primary: hsl(0, 0%, 19%);
+  --start: hsl(355, 67%, 62%);
+  --start-focus: hsl(355, 100%, 26%);
+  --restart: hsl(206, 13%, 25%);
+  --restart-focus: hsl(206, 12%, 43%);
+  --resume: hsl(115, 66%, 82%);
+  --resume-focus: hsl(115, 100%, 25%);
+  --pause: hsl(55, 66%, 76%);
+  --pause-focus: hsl(55, 100%, 23%);
+  --reset: hsl(180, 6%, 93%);
+  --reset-focus: hsl(206, 13%, 25%);
   --radius: 8px;
   --hover: hsl(216, 20%, 95%);
   --active: hsl(210, 20%, 90%);
-  --focus: 0 0 2px hsla(224, 71%, 4%, 0.5);
+  --focus: 1px solid hsla(224, 71%, 4%, 0.5);
+  --clock: hsl(0, 0%, 29%);
+  --border: hsl(0, 1%, 85%);
+  --tab-focus: 1px solid hsl(0, 0%, 67%);
 }
 [data-theme="dark"] {
+  --clock: hsl(0, 0%, 80%);
   --background: hsl(210, 20%, 10%);
-  --foreground: hsl(224, 71%, 85%);
-  --border: hsl(224, 60%, 60%);
-  --primary: hsl(2, 64%, 58%);
-  --shadow: hsl(0, 0%, 75%) 0px 0px 8px 0px;
+  --foreground: hsl(240, 1%, 22%);
+  --primary: hsl(0, 0%, 80%);
   --hover: hsl(240, 10%, 20%);
   --active: hsl(210, 20%, 5%);
-  --focus: 0 0 2px hsl(224, 60%, 70%);
+  --focus: 1px solid hsl(224, 60%, 70%);
+  --border: hsl(0, 0%, 67%);
+  --tab-focus: 1px solid hsl(0, 1%, 85%);
 }
 * {
   box-sizing: border-box;
