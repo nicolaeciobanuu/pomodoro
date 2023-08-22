@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Label } from "./primitives";
-import { useSettings } from "@/context";
+import { useSettings } from "@/providers";
 
 export function Settings() {
   document.title = "Settings";
