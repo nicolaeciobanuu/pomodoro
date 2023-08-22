@@ -1,33 +1,56 @@
 .container {
   display: flex;
   justify-content: center;
-  padding: 3rem 0;
+  padding-top: 4rem;
   button {
     border-radius: 4px;
     padding: 1rem 2rem;
     box-sizing: border-box;
     width: 130px;
     text-align: center;
-    &:focus {
-      outline: 2px solid blue; 
+    &:hover{
+      cursor: pointer;
+    }
+    &::selection {
+      background-color: transparent;
     }
   }
 
   .start {
     background-color: var(--start);
     width: calc(1rem + 260px);
+    color: var(--button-text-1);
+     &:focus{
+      outline: 1px solid var(--start-focus)
+    }
   }
   .restart {
     background-color: var(--restart);
+    color: var(--button-text-1);
+    &:focus{
+      outline: 1px solid var(--restart-focus)
+    }
   }
   .resume {
     background-color: var(--resume);
+    color: var(--button-text-2);
+     &:focus{
+      outline: 1px solid var(--resume-focus)
+    }
   }
   .pause {
     background-color: var(--pause);
+    color: var(--button-text-2);
+     &:focus{
+      outline: 1px solid var(--pause-focus)
+    }
   }
   .reset {
     background-color: var(--reset);
+    color: var(--button-text-2);
     margin-right: 1rem;
+     &:focus{
+      outline: 1px solid var(--reset-focus)
+    }
   }
 }
