@@ -38,8 +38,10 @@ export function Settings() {
       <div>
         <Label htmlFor="pomodoroDuration">Pomodoro Duration</Label>
         <input
-          type="number"
+          type="text"
           id="pomodoroDuration"
+          inputMode="numeric"
+          pattern="[0-9]*"
           value={pomodoroDuration}
           onChange={(event) => handleChange(event, "pomodoro")}
         />
@@ -47,8 +49,10 @@ export function Settings() {
       <div>
         <Label htmlFor="shortBreakDuration">Short Break Duration</Label>
         <input
-          type="number"
+          type="text"
           id="shortBreakDuration"
+          inputMode="numeric"
+          pattern="[0-9]*"
           value={shortBreakDuration}
           onChange={(event) => handleChange(event, "shortBreak")}
         />
@@ -56,7 +60,9 @@ export function Settings() {
       <div>
         <Label htmlFor="LongBreakDuration">Long Break Duration</Label>
         <input
-          type="number"
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
           id="longBreakDuration"
           value={longBreakDuration}
           onChange={(event) => handleChange(event, "longBreak")}
