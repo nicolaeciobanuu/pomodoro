@@ -8,7 +8,14 @@ import { useSettings } from "@/context";
 export function Contents() {
   const { pomodoroDuration, shortBreakDuration, longBreakDuration } =
     useSettings();
+  const [mounted, setMounted] = React.useState(false);
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
+  if (!mounted) {
+    return null; //TODO: add loading spinner
+  }
   return (
     <>
       <Content value="pomodoro">
