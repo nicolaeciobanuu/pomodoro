@@ -15,12 +15,12 @@ export function Controls({
     <div className={styles.container}>
       {!status && (
         <button type="button" onClick={() => start()} className={styles.start}>
-          Start Timer
+          Start 
         </button>
       )}
       {status === statusName[3] && (
         <button onClick={() => start()} className={styles.restart}>
-          Restart Timer
+          Restart 
         </button>
       )}
       {(status === statusName[1] || status === statusName[0]) && (
