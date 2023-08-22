@@ -8,7 +8,7 @@
   .time {
     font-size: clamp(5rem, 8vw, 10rem);
     font-weight: 500;
-    color: #696969;
+    color: var(--clock);
     &::selection {
     background-color: transparent;
   }
