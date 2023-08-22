@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+  button {
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    width: 130px;
+    text-align: center;
+    &:focus {
+      outline: 2px solid blue; 
+    }
+  }
+
+  .start {
+    background-color: var(--start);
+    width: calc(1rem + 260px);
+  }
+  .restart {
+    background-color: var(--restart);
+  }
+  .resume {
+    background-color: var(--resume);
+  }
+  .pause {
+    background-color: var(--pause);
+  }
+  .reset {
+    background-color: var(--reset);
+    margin-right: 1rem;
+  }
+}

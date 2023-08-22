@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  .time {
+    font-size: clamp(5rem, 8vw, 10rem);
+    font-weight: 500;
+    color: #696969;
+    &::selection {
+    background-color: transparent;
+  }
+  }
+}
+
