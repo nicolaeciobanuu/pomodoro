@@ -1,5 +1,7 @@
 "use client";
 import React, { createContext, useContext, useState, useEffect } from "react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { ThemeProviderProps } from "next-themes/dist/types";
 
 type SettingsContextType = {
   pomodoroDuration: number;
@@ -19,7 +21,7 @@ const SettingsContext = createContext<SettingsContextType>({
   setLongBreakDuration: () => {},
 });
 
-export function SettingsProvider({ children }: { children: React.ReactNode }) {
+export function Providers({ children, ...props }: ThemeProviderProps) {
   const [pomodoroDuration, setPomodoroDuration] = useState(25);
   const [shortBreakDuration, setShortBreakDuration] = useState(5);
   const [longBreakDuration, setLongBreakDuration] = useState(30);
@@ -57,9 +59,11 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <SettingsContext.Provider value={contextValue}>
-      {children}
-    </SettingsContext.Provider>
+    <NextThemesProvider {...props}>
+      <SettingsContext.Provider value={contextValue}>
+        {children}
+      </SettingsContext.Provider>
+    </NextThemesProvider>
   );
 }
 
