@@ -1,0 +1,53 @@
+:root {
+  --background: #f9fafb;
+  --foreground: #f9f9fa;
+
+  --primary: hsl(2, 64%, 58%);
+
+  --muted: #98a1a8;
+  
+  --start: red;
+  --restart: gray;
+  --resume: rgb(36, 218, 36);
+  --pause: yellow;
+  --reset: #eeeeee;
+
+  --shadow: #d1d5db 0px 0px 8px 0px;
+  --radius: 8px;
+  --hover: hsl(216, 20%, 95%);
+  --active: hsl(210, 20%, 90%);
+  --focus: 0 0 2px hsla(224, 71%, 4%, 0.5);
+}
+[data-theme="dark"] {
+  --background: hsl(210, 20%, 10%);
+  --foreground: hsl(224, 71%, 85%);
+  --border: hsl(224, 60%, 60%);
+  --primary: hsl(2, 64%, 58%);
+  --shadow: hsl(0, 0%, 75%) 0px 0px 8px 0px;
+  --hover: hsl(240, 10%, 20%);
+  --active: hsl(210, 20%, 5%);
+  --focus: 0 0 2px hsl(224, 60%, 70%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+button,
+fieldset,
+input {
+  all: unset;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100dvh;
+  overflow-x: hidden;
+  background-color: var(--background);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
