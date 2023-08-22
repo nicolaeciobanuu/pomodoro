@@ -36,13 +36,14 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
     );
 
     if (!isNaN(storedPomodoroDuration)) {
-      setPomodoroDuration(storedPomodoroDuration);
+      storedPomodoroDuration && setPomodoroDuration(storedPomodoroDuration);
     }
     if (!isNaN(storedShortBreakDuration)) {
-      setShortBreakDuration(storedShortBreakDuration);
+      storedShortBreakDuration &&
+        setShortBreakDuration(storedShortBreakDuration);
     }
     if (!isNaN(storedLongBreakDuration)) {
-      setLongBreakDuration(storedLongBreakDuration);
+      storedLongBreakDuration && setLongBreakDuration(storedLongBreakDuration);
     }
   }, []);
 
