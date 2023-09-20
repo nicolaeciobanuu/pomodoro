@@ -25,9 +25,7 @@
     &[data-state="active"] {
       color: var(--primary);
     }
-    &:focus {
-      outline: var(--tab-focus);
-    }
+
     &::selection {
       background-color: transparent;
     }
