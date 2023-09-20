@@ -10,7 +10,7 @@ export function Header() {
           href="https://github.com/ciobanunicolae/pomodoro"
           title="View GitHub repository"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           className={styles.link}
           aria-label="GitHub"
         >
